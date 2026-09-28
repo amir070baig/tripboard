@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TripBoard
 
-## Getting Started
+TripBoard is a practice travel experience booking platform for discovering local experiences and multi-day trips.
 
-First, run the development server:
+This foundation includes a responsive homepage and route placeholders for experience browsing and details, guest checkout, customer bookings, and the admin area. Booking, payment, authentication, and database features are not implemented yet.
+
+## Getting started
+
+Requirements: Node.js and npm.
+
+Install project dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Useful commands:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` — App Router routes, route groups, and shared styles
+- `src/app/(customer)/` — customer-facing routes (group name is omitted from URLs)
+- `src/app/admin/` — admin foundation
+- `src/components/` — reusable presentation components
+- `public/` — static assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`.env.example` lists names reserved for future database and authentication configuration. No environment values are currently required to run the starter. Keep real values in an ignored local env file and never commit secrets.
 
-## Deploy on Vercel
+## Development notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before changing Next.js conventions, consult the installed guides in `node_modules/next/dist/docs/` and follow `AGENTS.md`. PostgreSQL and Prisma are planned but have not been added.
