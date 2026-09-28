@@ -3,7 +3,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export default function CustomerLayout({ children }: { children: ReactNode }) {
-  return <><SiteHeader />{children}<SiteFooter /></>;
+  return <div className="customer-layout"><SiteHeader />{children}<SiteFooter /></div>;
 }
 
 
