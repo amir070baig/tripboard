@@ -1,41 +1,84 @@
-# TripBoard
+# TripBoard — AI-Assisted Travel Booking Platform
 
-TripBoard is a practice travel experience booking platform for discovering local experiences and multi-day trips.
+TripBoard is a full-stack travel experience and booking platform built with modern web technologies and AI-assisted development workflows.
 
-This foundation includes a responsive homepage and route placeholders for experience browsing and details, guest checkout, customer bookings, and the admin area. Booking, payment, authentication, and database features are not implemented yet.
+## 🚀 Overview
 
-## Getting started
+The project focuses on building a modern travel platform where users can explore travel experiences, manage bookings, and interact with a responsive web application.
 
-Requirements: Node.js and npm.
+TripBoard was also used as a practical project for exploring AI coding agents and agent-assisted software development workflows.
 
-Install project dependencies and start the development server:
+## ✨ Features
 
-```bash
+- Travel experience discovery
+- Booking workflows
+- Responsive user interface
+- Authentication
+- Backend API integration
+- Database-driven application
+- Modern Next.js architecture
+- AI-assisted development workflows
+
+## 🛠️ Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
+- PostgreSQL
+- REST APIs
+
+## 🤖 AI-Assisted Development
+
+Development of TripBoard involved AI coding agents and developer tools to assist with:
+
+- Code generation
+- Project analysis
+- Feature implementation
+- Debugging
+- Refactoring
+- Development planning
+
+The project was used to explore how AI agents can be integrated into a practical software development workflow while keeping architectural and implementation decisions under developer control.
+
+## 🏗️ Architecture
+
+```text
+Next.js Application
+       │
+       ├── React UI
+       ├── Server / API Layer
+       ├── Authentication
+       └── Business Logic
+              │
+              ▼
+          PostgreSQL
+
+⚙️ Local Development
+
+Clone the repository:
+
+git clone https://github.com/amir070baig/tripboard.git
+cd tripboard
+
+Install dependencies:
+
 npm install
+
+Configure the required environment variables.
+
+Start the development server:
+
 npm run dev
-```
+🎯 Purpose
 
-Open [http://localhost:3000](http://localhost:3000).
+TripBoard was built to strengthen full-stack development skills while exploring modern Next.js architecture, TypeScript, database-driven applications, and AI-assisted software engineering workflows.
 
-Useful commands:
+👨‍💻 Author
 
-```bash
-npm run lint
-npm run build
-```
+Mohd Amir
 
-## Project structure
+Full-Stack Developer building production-ready web applications and AI-powered products.
 
-- `src/app/` — App Router routes, route groups, and shared styles
-- `src/app/(customer)/` — customer-facing routes (group name is omitted from URLs)
-- `src/app/admin/` — admin foundation
-- `src/components/` — reusable presentation components
-- `public/` — static assets
-
-## Environment variables
-
-`.env.example` lists names reserved for future database and authentication configuration. No environment values are currently required to run the starter. Keep real values in an ignored local env file and never commit secrets.
-
-## Development notes
-
-Before changing Next.js conventions, consult the installed guides in `node_modules/next/dist/docs/` and follow `AGENTS.md`. PostgreSQL and Prisma are planned but have not been added.
+GitHub: https://github.com/amir070baig
